@@ -1,21 +1,59 @@
-.app{
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin:10px ;
-    padding:20px ;
-    width: 100%;
+    flex-direction: column;
+    width: 33%;
     background-color: white;
-    
+    margin: 1rem 0;
 }
-.img{
+
+
+.card>img{
     max-height: 200px;
-    width: 100%;
-    object-fit: contain;
+    width: 70%;
     margin-bottom: 15px;
 }
-.hii{
-    width: 31%;
-    margin-bottom: 15px;
-    font-size: small;
+.card>.description{
+    width:70%;
+    text-align: center;
+    margin: 0;
+}
+
+.card>.features{
+    width:70%;
+    margin: 0.3rem 0;
+    font-weight: 600;
+    font-size: 17px;
+    color: #4ee54a;
+}
+
+.card>ul{
+    margin: 0;
+    list-style: georgian;
+    width: 70%;
+    margin: auto;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 1050px) {    
+    .card{
+        width: 50%;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+   
+    .card{
+        width: 100%;
+    }
+
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import up from './up.jpg'
+import up from './assets/images/up.jpg'
 import {HiX} from 'react-icons/hi'
 import {FaBars} from 'react-icons/fa'
 
